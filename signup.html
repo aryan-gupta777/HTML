@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <form>
+    <label for="firstname">firstname: </label>
+    <input required id="firstname" type="text" placeholder="Enter your firstname">
+    <br/><br/>
+
+    <label for="lastname">lastname: </label>
+    <input required id="lastname" type="text" placeholder="Enter your lastname">
+    <br/><br/>
+
+    <label for="email">email: </label>
+    <input required id="email" type="email" placeholder="Enter your email">
+    <br/><br/>
+
+    <label for="password">password: </label>
+    <input required id="password" type="password" placeholder="Enter your password">
+    <br/><br/>
+
+    <label for="birth-date">date of birth: </label>
+    <input id="birth-date" type="date">
+    <br/><br/>
+
+    <label for="gender">gender: </label>
+    <select id="gender">
+      <option selected disabled>choose</option>
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select>
+    <br/><br/>
+
+    <label for="eye-color">eye color: </label>
+    <input id="eye-color" type="color"/>
+    <br/><br/>
+
+    <input required id="terms" type="checkbox"/>
+    <label for="terms">accept terms of use</label>
+    <br/>
+
+    <input id="newsletter" type="checkbox" checked/>
+    <label for="newsletter">allow automated email newsletter</label>
+    <br/><br/>
+
+    <input type="submit">
+    <input type="reset">
+  </form>
+
+</body>
+</html>

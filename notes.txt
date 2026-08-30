@@ -1,0 +1,63 @@
+HTML is the absolute foundation on which the internet, as we know today, is based.
+ 
+HTML stands for Hypertext Markup Language
+  -> Hypertext is text that links documents on the internet together through hyperlinks.(When you visit any Wikipedia article, you'll find a lot of hyperlinks that point to other web pages.)
+  -> HTML is the code that is used to structure a web page and its content.
+
+The fundamental difference is that tags define the structure and purpose of an HTML element, while attributes provide extra settings or data that modify how that element behaves or looks.
+
+self-closing tags - <br/> , <hr/> , <input/> , <image/>
+
+alt attribute -  it allows you to provide a description of the image when you insert an image in HTML.
+                            This is important for three reasons. 
+                            1. if an error occurs and the browser fails to render the image, the browser can display the description instead.
+                            2. blind people or people with visual impairments use browsers that read the website to them. ( the information provided in the alt attribute to just read aloud the image description. )
+                            3. good way to provide additional keywords to your website. During a Google search, the keywords from the user's search query are compared with all the words on your website to see if they match the website with the greatest match wins the Google ranking.
+
+-> You can optimize your HTML images by providing an image description in the alt attribute, and use height and width attributes to reserve space in advance, and therefore avoid cumulative layout shifts.
+
+              -> Image size: You can control image width and height using CSS, but specifying them in HTML is important for CLS.
+              -> CLS (Cumulative Layout Shift): Unexpected movement of webpage elements while the page loads.
+
+              -> Why specify dimensions in HTML?
+                 -Browser knows the image's required space beforehand.
+                 -It reserves that space while loading.
+                 -Prevents other content from shifting when the image appears.
+                 -Better user experience and can improve SEO/ranking.
+
+               -> Image resolution:
+                 -Higher resolution = better quality but slower loading.
+                 -Use only the resolution you actually need.
+                 -Small icons don't need 4K images.
+
+               Best practice: Prefer reducing image size/resolution rather than enlarging a small image.
+               Key rule: ⚡ Optimize image size + specify width and height in HTML → faster loading + lower CLS.
+
+-> Semantic HTML is the practice of using HTML tags that inherently describe the meaning and purpose of their content. 
+   Unlike generic container tags like <div> or <span>, which provide no context about what is inside them, 
+   semantic tags tell both the browser and assistive technologies exactly what role the content plays on the webpage.
+
+-> hyperlinks are created using the <a> (anchor) tag.
+   href: Specifies the destination URL or file path.
+   target: Controls where to open the link (_blank for new tab, _self for same tab).
+   title: Adds a hover tooltip message for the user.
+
+-> use the id attribute to create a bookmark:
+   <h2 id="C4">Chapter 4</h2>
+   <a href="#C4">Jump to Chapter 4</a>
+
+-> FORMS - An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+          
+-> Tables in HTML
+     Tables are used to represent real life table data.
+     <tr> used to display table row
+     <td> used to display table data
+     <th> used to display table header
+
+       <thead> to wrap table head
+       <tbody> to wrap table body
+
+-> video tag - To start a video automatically, use the autoplay attribute:
+               Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
+               Add muted after autoplay to let your video start playing automatically (but muted)
+

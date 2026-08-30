@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <label for="username">username</label>
+        <input id="username" type="text">
+        <br>
+        <br>
+        <div>
+            <label for="male">MALE</label>
+            <input id ="male" type="checkbox">
+            <label for="female">FEMALE</label>
+            <input id="female" type="checkbox">
+        </div>
+        <br>
+        <div>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="option">select an option </label>
+            <select id="option">
+                <option value="child">child</option>
+                <option selected value="adult">adult</option>
+                <option value="old">ols</option>
+            </select>
+            <br><br>
+            
+        </div>
+        <label for="firstname">firstname: </label>
+        <input required id="firstname" type="text" placeholder="Enter your firstname" required>
+        <br /><br />
+
+        <label for="lastname">lastname: </label>
+        <input required id="lastname" type="text" placeholder="Enter your lastname" disabled>
+        <br /><br />
+
+        <label for="email">email: </label>
+        <input required id="email" type="email" placeholder="Enter your email">
+        <br /><br />
+
+        <label for="password">password: </label>
+        <input required id="password" type="password" placeholder="Enter your password">
+        <br /><br />
+        <input type="submit">
+        <div>
+            <br>
+            <input type="file" placeholder="file">
+            <br><br>
+            <input type="reset">
+        </div>
+
+    </form>
+</body>
+
+</html>
