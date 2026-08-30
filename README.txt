@@ -16,7 +16,8 @@ alt attribute -  it allows you to provide a description of the image when you in
 
 -> You can optimize your HTML images by providing an image description in the alt attribute, and use height and width attributes to reserve space in advance, and therefore avoid cumulative layout shifts.
 
-              -> Image size: You can control image width and height using CSS, but specifying them in HTML is important for CLS.
+              -> Image size: You can control image width and height using CSS, but specifying them in HTML is important for CLS. 
+
               -> CLS (Cumulative Layout Shift): Unexpected movement of webpage elements while the page loads.
 
               -> Why specify dimensions in HTML?
@@ -61,3 +62,16 @@ alt attribute -  it allows you to provide a description of the image when you in
                Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
                Add muted after autoplay to let your video start playing automatically (but muted)
 
+
+-> Semantic elements are HTML tags that clearly describe what their content means.
+| Element        | Meaning                                 |
+| -------------- | --------------------------------------- |
+| `<header>`     | Top/header section of a page or section |
+| `<nav>`        | Navigation links                        |
+| `<main>`       | Main content of the page                |
+| `<section>`    | A meaningful section of content         |
+| `<article>`    | Independent content, like a blog post   |
+| `<aside>`      | Related/side content                    |
+| `<footer>`     | Bottom/footer section                   |
+| `<figure>`     | Self-contained image, diagram, etc.     |
+| `<figcaption>` | Caption for a figure                    |
